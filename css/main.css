@@ -37,11 +37,6 @@
 
 * {
 	font-family: 'Nunito Sans', sans-serif;
-        -webkit-box-sizing: border-box;
-        -moz-box-sizing: border-box;
-        -ms-box-sizing: border-box;
-        -o-box-sizing: border-box;
-        box-sizing: border-box;
 		margin: 0;
     
     }
@@ -65,17 +60,18 @@ header {
 	margin-bottom: 10rem;
   }
 
-header, header ul a{
+header, header ul a, header p, #btn a:hover{
 	color: white;
 }
 
-a:hover, span {
+li a:hover, span {
 	color: #64e7f1
 }
 
 #services, #about, #choose, #connect, #upcoming {
 	margin-bottom: 11rem;
 }
+
 
 
 /*---- TYPOGRAPHY ----*/
@@ -98,10 +94,18 @@ h2 {
 	font-size: 2rem;
 }
 
+h3 {
+	font-size: 1.7rem;
+}
+
 p {
-	font-size: .9rem;
+	font-size: 1.1rem;
 	line-height: 1.5em;
 	letter-spacing: .05rem;
+}
+
+header p:nth-child(2) {
+	margin-bottom: 4rem;
 }
 
 span, p {
@@ -142,21 +146,21 @@ nav li {
 /*---- BUTTONS ----*/
 
 #btn {
-	background-color: white;
+	background-color: #fff;
 	border: none;
-	color: white;
+	color: #6840a2;
 	padding: 20px;
 	text-align: center;
 	text-decoration: none;
-	display: inline-block;
+	display: block;
 	font-size: 16px;
 	margin: 4px 2px;
 	border-radius: 2rem;
   }
 
-  #btn a:hover {
+  #btn:hover {
 	  background-color: #6840a2;
-	  color: white;
+	  color: #fff;
   }
 
 
@@ -167,7 +171,7 @@ nav li {
 
 
 
-#upcoming-events, #choose, #about-us, body > div.row.wrapper > header > div:nth-child(2), h2, nav p, header nav {
+#upcoming-events, #choose, #about, body > section.row.wrapper > header > div:nth-child(2), h2, nav p, header nav {
 	text-align: center;
 }
 
@@ -191,12 +195,15 @@ h1, h2 {
 
 
 
-@media only screen and (max-width: 780px) {
+@media only screen and (min-width: 780px) {
 
+	#btn {
+		display: inline-block;
+	}
 
 }
 
-@media only screen and (max-width: 1170px) {
+@media only screen and (min-width: 1170px) {
 	
 }
 
@@ -221,7 +228,14 @@ h1, h2 {
 
 
 
+/*--------------------------------------------------------------
+7.0 - UTILITIES
+-------------------------------------------------------------- */
 
+.center-block {
+	float: none;
+	margin: 0 auto;
+}
 
 
 
@@ -232,7 +246,6 @@ h1, h2 {
 
 
 * {
-	box-sizing: border-box;
 	font-family: sans-serif;
   }
   
