@@ -60,13 +60,6 @@ header {
 	margin-bottom: 10rem;
   }
 
-header, header ul a, header p, #btn a:hover{
-	color: white;
-}
-
-li a:hover, span {
-	color: #64e7f1
-}
 
 #services, #about, #choose, #connect, #upcoming {
 	margin-bottom: 11rem;
@@ -142,6 +135,14 @@ nav li {
 /*--------------------------------------------------------------
 6.0 - COMPONENTS
 -------------------------------------------------------------- */
+
+li a:hover, span {
+	color: #64e7f1
+}
+
+
+
+
 
 /*---- BUTTONS ----*/
 
@@ -239,6 +240,11 @@ h1, h2 {
 
 
 
+/*---- COLORS ----*/
+
+header, header ul a, header p, #btn a:hover{
+	color: white;
+}
 
 
 
